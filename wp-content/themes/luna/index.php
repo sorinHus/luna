@@ -19,7 +19,7 @@ get_header(); ?>
     	<div class="grid grid-pad">
         	<div class="col-1-1">
 				<h1 class="entry-title">
-					<?php echo esc_html( get_theme_mod( 'luna_blog_title', esc_html__( 'The Blog', 'luna' ) )) ?>
+					<?php echo esc_html( get_theme_mod( 'luna_blog_title', esc_html__( 'Recent Posts', 'luna' ) )) ?>
                 </h1> 
             </div>
         </div>
@@ -34,6 +34,8 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				<div class="half">
+
 				<?php
 					/* Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
@@ -41,6 +43,8 @@ get_header(); ?>
 					 */
 					get_template_part( 'content', get_post_format() );
 				?>
+
+				</div>
 
 			<?php endwhile; ?>
 
