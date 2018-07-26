@@ -656,9 +656,11 @@ a:focus {
 
 .site-header nav ul li::after{
 	position: absolute;
+	margin: 0;
   	content: "";
  	width: 5px;
 	height: 5px;
+	border-color: #dedede;
 	border-style: solid;
 	border-radius: 50%;
 	border-width: 1px;
@@ -669,8 +671,8 @@ a:focus {
 
 
 .double {
-	border-top: 4px double #999;
-	border-bottom: 4px double #999;
+	border-top: 4px double #dedede;
+	border-bottom: 4px double #dedede;
 	}
 
 .menu-text{
@@ -685,12 +687,17 @@ a:focus {
 	position: relative;
 	height: 20px;
 	padding-top: 20px;
+
 }
 
 .social-element{
 	padding-left: 4px;
 	padding-right: 4px;
 	display: inline-block;
+}
+
+.social-element:hover{
+	box-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px lightgray;
 }
 
 @media screen and (min-width: 600px) {
@@ -700,8 +707,11 @@ a:focus {
 	text-align: right;
 	margin-left: 1050px;
 	margin-top: -42px;
-	border: none;
 }}
+
+.search-field{
+	border: none;
+}
 
 .search-submit{
 	display: none;
