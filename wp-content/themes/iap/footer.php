@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package final
+ * @package iap
  */
 
 ?>
@@ -15,16 +15,16 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'final' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'iap' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'final' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'iap' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'final' ), 'Final Theme', '<a href="https://github.com/sorinHus/luna.git">Sorin Hus</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'iap' ), 'iap', '<a href="http://www.infoap.utcluj.ro/">iap</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -9,33 +9,29 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package final
+ * @package iap
  */
 
 get_header();
 ?>
 
-<div class="row">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-	<div class="column1">
+		<?php
+		if ( have_posts() ) :
 
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main">
-
+			if ( is_home() && ! is_front_page() ) :
+				?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
 				<?php
-				if ( have_posts() ) :
+			endif;
 
-					if ( is_home() && ! is_front_page() ) :
-						?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-					<?php
-				endif;
-
-				/* Start the Loop */
-				while ( have_posts() ) :
-					the_post();
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
 
 				/*
 				 * Include the Post-Type-specific template for the content.
@@ -55,15 +51,9 @@ get_header();
 		endif;
 		?>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
-	</div><!-- column1-->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-
-	<div class="column2">
-		<?php get_sidebar(); ?>
-	</div>
-</div>
-
-<?php 
+<?php
+get_sidebar();
 get_footer();
