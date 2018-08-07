@@ -648,7 +648,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-
 .navbar ul {
 	margin: 0;
 	padding: 0;
@@ -979,13 +978,15 @@ a:hover, a:active {
 	height: 90px;
 	width: 100%;
 	padding-top: 20px;
+	z-index: 6;
 }
 
 .site-branding {
-	padding-top: 50px;
+	padding-top: 80px;
 	height: 125px;
     display: block;
     text-align: center;
+    z-index: 4;
 }
 
 .site-branding img {
@@ -1029,10 +1030,11 @@ a:hover, a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .entry-header .entry-title{
-	padding-top: 200px;
+	padding-top: 220px;
 	padding-bottom: 10px;
     text-align: center;
     position: relative;
+    z-index: -1;
 }
 .entry-header .entry-title:after {
 	position: absolute;
