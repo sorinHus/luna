@@ -10,6 +10,10 @@
 get_header();
 ?>
 
+<div class="row">
+
+	<div class="column1">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -31,7 +35,13 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div><!-- column1-->
 
-<?php
-get_sidebar();
+
+	<div class="column2">
+		<?php get_sidebar(); ?>
+	</div>
+</div>
+
+<?php 
 get_footer();
