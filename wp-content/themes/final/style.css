@@ -978,7 +978,6 @@ a:hover, a:active {
 	height: 90px;
 	width: 100%;
 	padding-top: 20px;
-	z-index: 6;
 }
 
 .site-branding {
@@ -986,7 +985,6 @@ a:hover, a:active {
 	height: 125px;
     display: block;
     text-align: center;
-    z-index: 4;
 }
 
 .site-branding img {
@@ -1008,14 +1006,17 @@ a:hover, a:active {
 .column1 {
     float: left;
     width: 70%;
-    padding: 10px;
+    padding-left: 10px;
+	padding-top: 220px;
+	padding-right: 10px;
+	padding-bottom: 10px;
 }
 
 .column2{
     float: right;
     width: 25%;
     padding-left: 10px;
-    padding-top: 210px;
+    padding-top: 220px;
 
 }
 
@@ -1030,11 +1031,9 @@ a:hover, a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .entry-header .entry-title{
-	padding-top: 220px;
 	padding-bottom: 10px;
     text-align: center;
     position: relative;
-    z-index: -1;
 }
 .entry-header .entry-title:after {
 	position: absolute;
@@ -1053,6 +1052,7 @@ a:hover, a:active {
 
 .hentry {
 	margin: 0 0 1.5em;
+	padding-bottom: 20px;
 }
 
 .updated:not(.published) {
