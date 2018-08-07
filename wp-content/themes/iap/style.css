@@ -903,6 +903,7 @@ a:hover, a:active {
 	text-align: center;
 	position: relative;
 	padding-bottom: 10px;
+	padding-top: 180px;
 }
 .entry-header .entry-title:after {
 	position: absolute;

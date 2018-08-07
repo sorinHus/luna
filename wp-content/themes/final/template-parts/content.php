@@ -22,8 +22,11 @@
 			?>
 			<div class="entry-meta">
 				<?php
+				the_category();
+				?>
+				<span class="separator"></span>
+				<?php
 				final_posted_on();
-				final_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -33,18 +36,8 @@
 
 	<div class="entry-content">
 		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'final' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
+
+		the_excerpt();
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'final' ),
