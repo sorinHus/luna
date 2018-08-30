@@ -13,7 +13,19 @@
 
 	</div><!-- #content -->
 
+	
+
 	<footer id="colophon" class="site-footer">
+
+		<div id="footer-sidebar" class="secondary">
+			<div id="footer-sidebar1">
+			<?php
+			if(is_active_sidebar('footer sidebar')){
+			dynamic_sidebar('footer sidebar');
+			}
+			?>
+		</div>
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'final' ) ); ?>">
 				<?php
