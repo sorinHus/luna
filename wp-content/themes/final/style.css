@@ -1347,3 +1347,25 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.footer-column{
+	float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 370px;
+}
+
+.textwidget{
+	height: 350px;
+}
+
+.widget .widget_recent_comments{
+	height: 350px;
+}
+
+.widget .widget_media_gallery{
+	height: 350px;
+}
