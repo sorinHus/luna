@@ -70,11 +70,13 @@
 	</div>
 
 
-	<aside id="sidebar-2">
-		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) ?>
-	</aside>
-
 	<div class="row">
+
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<div class="top-text">«</div>
+		</button>
 
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'final' ) ); ?>">
@@ -96,6 +98,14 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script>
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+}
+</script>
 
 </body>
 </html>

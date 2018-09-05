@@ -1310,9 +1310,11 @@ object {
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
+	margin: 0;
 }
 
 .gallery-columns-2 .gallery-item {
+	padding: 0;
 	max-width: 50%;
 }
 
@@ -1358,14 +1360,56 @@ object {
     height: 370px;
 }
 
-.textwidget{
-	height: 350px;
+.widget_recent_comments{
+	height: 320px;
 }
 
-.widget .widget_recent_comments{
-	height: 350px;
+.widget_text{
+	height: 320px;
 }
 
-.widget .widget_media_gallery{
-	height: 350px;
+.widget_media_gallery{
+	height: 320px;
+}
+
+.site-info{
+	height: 70px;
+    text-align: center;
+    margin: auto;
+    background-color: #242526;
+    color: #808182;
+    margin: auto;
+    padding: 23px;
+    text-decoration: none;
+}
+
+.site-info a{
+	color: #808182;
+}
+
+.site-info a:hover{
+	color: #f4b642;
+}
+
+#myBtn {
+	position: relative;
+    left: 600px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0 35px 35px 35px;
+    border-color: transparent transparent #242526 transparent;
+    padding: 0;
+    background: none;
+}
+
+.top-text{
+	position: relative;
+    bottom: -30px;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 199;
+    color: white;
+    transform: rotate(90deg);
 }
